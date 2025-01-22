@@ -147,12 +147,18 @@ $breakpoints: (
 			}
 
 			.card-line {
+				padding-left: 0;
+				padding-right: $basePadding * 2;
+				grid-column: span 1;
 				grid-template-columns: 100%;
-				// padding-left: $basePadding * 2;
+
+				.card {
+					padding-left: $basePadding * 2;
+				}
 			}
 
 			.card {
-				padding-left: $basePadding * 2;
+				padding-right: $basePadding * 2;
 				grid-column: 1 / 2;
 			}
 		}

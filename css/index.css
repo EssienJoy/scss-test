@@ -335,9 +335,9 @@ main::before {
 }
 .grid-section .grid-section-container .card-line {
   grid-column: span 2;
-  border-top: 2px solid #e3e3e3;
+  border-top: 1px solid rgba(184, 184, 184, 0.4);
   grid-template-columns: repeat(2, minmax(10%, 50%));
-  border-bottom: 2px solid #e3e3e3;
+  border-bottom: 1px solid rgba(184, 184, 184, 0.4);
   column-gap: 3rem;
 }
 .grid-section .grid-section-container .card-line .img-grid {
@@ -452,10 +452,16 @@ main::before {
     display: none;
   }
   .grid-section .grid-section-container .card-line {
+    padding-left: 0;
+    padding-right: 1rem;
+    grid-column: span 1;
     grid-template-columns: 100%;
   }
-  .grid-section .grid-section-container .card {
+  .grid-section .grid-section-container .card-line .card {
     padding-left: 1rem;
+  }
+  .grid-section .grid-section-container .card {
+    padding-right: 1rem;
     grid-column: 1/2;
   }
 }

@@ -149,9 +149,9 @@ main::before {
 
 		.card-line {
 			grid-column: span 2;
-			border-top: 2px solid $greyColor;
+			border-top: 1px solid rgba(184, 184, 184, 0.4);
 			grid-template-columns: repeat(2, minmax(10%, 50%));
-			border-bottom: 2px solid $greyColor;
+			border-bottom: 1px solid rgba(184, 184, 184, 0.4);
 			column-gap: 3rem;
 
 			.img-grid {
